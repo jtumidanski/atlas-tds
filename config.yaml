@@ -41,3 +41,5 @@ topics:
     name:    CharacterMapMessageEventService
   - id:      TOPIC_DROP_EXPIRE_EVENT
     name:    DropExpiredService
+  - id:      TOPIC_CHARACTER_STAT_EVENT
+    name:    CharacterStatService
