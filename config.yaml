@@ -37,3 +37,7 @@ topics:
     name:    MonsterKilledService
   - id:      TOPIC_DROP_EVENT
     name:    DropService
+  - id:      TOPIC_CHARACTER_MAP_MESSAGE_EVENT
+    name:    CharacterMapMessageEventService
+  - id:      TOPIC_DROP_EXPIRE_EVENT
+    name:    DropExpiredService
