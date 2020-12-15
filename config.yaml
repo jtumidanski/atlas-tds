@@ -1,0 +1,39 @@
+topics:
+  - id:      TOPIC_CHANNEL_SERVICE
+    name:    ChannelService
+  - id:      TOPIC_CHARACTER_STATUS
+    name:    CharacterStatusEventService
+  - id:      TOPIC_CHANGE_MAP_COMMAND
+    name:    ChangeMapCommandService
+  - id:      TOPIC_CHANGE_MAP_EVENT
+    name:    ChangeMapEventService
+  - id:      TOPIC_CHARACTER_CREATED_EVENT
+    name:    CharacterCreatedEventService
+  - id:      TOPIC_CHARACTER_STATUS
+    name:    CharacterStatusEventService
+  - id:      TOPIC_CHARACTER_MOVEMENT
+    name:    CharacterMovementEventService
+  - id:      TOPIC_CHARACTER_EXPERIENCE_EVENT
+    name:    CharacterExperienceService
+  - id:      TOPIC_CHARACTER_LEVEL_EVENT
+    name:    CharacterLevelService
+  - id:      TOPIC_ENTER_PORTAL
+    name:    EnterPortalService
+  - id:      TOPIC_ENABLE_ACTIONS
+    name:    EnableActionsService
+  - id:      TOPIC_MAP_CHARACTER_EVENT
+    name:    MapCharacterEventService
+  - id:      TOPIC_CHARACTER_CHANGE_CHANNEL_EVENT
+    name:    CharacterChangeChannelEventService
+  - id:      TOPIC_MONSTER_EVENT
+    name:    MonsterService
+  - id:      TOPIC_MONSTER_MOVEMENT
+    name:    MonsterMovementService
+  - id:      TOPIC_CONTROL_MONSTER_EVENT
+    name:    ControlMonsterService
+  - id:      TOPIC_MONSTER_DAMAGE
+    name:    MonsterDamageService
+  - id:      TOPIC_MONSTER_KILLED_EVENT
+    name:    MonsterKilledService
+  - id:      TOPIC_DROP_EVENT
+    name:    DropService
