@@ -59,3 +59,5 @@ topics:
     name:    PickedUpNxService
   - id:      TOPIC_PICKED_UP_MESO
     name:    PickedUpMesoService
+  - id:      TOPIC_CANCEL_DROP_RESERVATION_COMMAND
+    name:    CancelDropReservationCommandService
