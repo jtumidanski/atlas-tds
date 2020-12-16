@@ -45,3 +45,17 @@ topics:
     name:    CharacterStatService
   - id:      TOPIC_ASSIGN_AP_COMMAND
     name:    AssignApService
+  - id:      TOPIC_RESERVE_DROP_COMMAND
+    name:    ReserveDropCommandService
+  - id:      TOPIC_PICKUP_DROP_COMMAND
+    name:    PickupDropCommandService
+  - id:      TOPIC_DROP_RESERVATION_EVENT
+    name:    DropReservationService
+  - id:      TOPIC_PICKUP_DROP_EVENT
+    name:    PickupDropService
+  - id:      TOPIC_PICKED_UP_ITEM
+    name:    PickedUpItemService
+  - id:      TOPIC_PICKED_UP_NX
+    name:    PickedUpNxService
+  - id:      TOPIC_PICKED_UP_MESO
+    name:    PickedUpMesoService
