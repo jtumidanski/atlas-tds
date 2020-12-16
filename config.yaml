@@ -43,3 +43,5 @@ topics:
     name:    DropExpiredService
   - id:      TOPIC_CHARACTER_STAT_EVENT
     name:    CharacterStatService
+  - id:      TOPIC_ASSIGN_AP_COMMAND
+    name:    AssignApService
