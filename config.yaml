@@ -61,3 +61,5 @@ topics:
     name:    PickedUpMesoService
   - id:      TOPIC_CANCEL_DROP_RESERVATION_COMMAND
     name:    CancelDropReservationCommandService
+  - id:      TOPIC_INVENTORY_MODIFICATION
+    name:    InventoryModificationService
