@@ -57,9 +57,13 @@ topics:
     name:    PickedUpItemService
   - id:      TOPIC_PICKED_UP_NX
     name:    PickedUpNxService
-  - id:      TOPIC_PICKED_UP_MESO
-    name:    PickedUpMesoService
+  - id:      TOPIC_GAIN_MESO
+    name:    GainMesoService
+  - id:      TOPIC_MESO_GAINED
+    name:    MesoGainedService
   - id:      TOPIC_CANCEL_DROP_RESERVATION_COMMAND
     name:    CancelDropReservationCommandService
   - id:      TOPIC_INVENTORY_MODIFICATION
     name:    InventoryModificationService
+  - id:      TOPIC_SERVER_NOTICE_COMMAND
+    name:    ServerNoticeCommandService
