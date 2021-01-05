@@ -67,3 +67,5 @@ topics:
     name:    InventoryModificationService
   - id:      TOPIC_SERVER_NOTICE_COMMAND
     name:    ServerNoticeCommandService
+  - id:      TOPIC_NPC_TALK_COMMAND
+    name:    NpcTalkService
