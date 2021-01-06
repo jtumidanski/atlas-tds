@@ -79,3 +79,7 @@ topics:
     name:    CharacterSkillUpdateService
   - id:      TOPIC_ASSIGN_SP_COMMAND
     name:    AssignSpService
+  - id:      CHANGE_FACIAL_EXPRESSION
+    name:    ChangeFacialExpressionService
+  - id:      EXPRESSION_CHANGED
+    name:    ExpressionChangedService
