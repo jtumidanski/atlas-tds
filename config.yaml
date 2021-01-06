@@ -69,3 +69,13 @@ topics:
     name:    ServerNoticeCommandService
   - id:      TOPIC_NPC_TALK_COMMAND
     name:    NpcTalkService
+  - id:      TOPIC_START_NPC_CONVERSATION
+    name:    StartNpcConversationService
+  - id:      TOPIC_CONTINUE_NPC_CONVERSATION
+    name:    ContinueNpcConversationService
+  - id:      TOPIC_SET_RETURN_TEXT
+    name:    SetReturnTextService
+  - id:      TOPIC_CHARACTER_SKILL_UPDATE_EVENT
+    name:    CharacterSkillUpdateService
+  - id:      TOPIC_ASSIGN_SP_COMMAND
+    name:    AssignSpService
