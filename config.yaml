@@ -83,3 +83,13 @@ topics:
     name:    ChangeFacialExpressionService
   - id:      EXPRESSION_CHANGED
     name:    ExpressionChangedService
+  - id:      DAMAGE_CHARACTER
+    name:    DamageCharacterService
+  - id:      TOPIC_SHOW_DAMAGE_CHARACTER_COMMAND
+    name:    ShowDamageCharacterService
+  - id:      TOPIC_ADJUST_MESO
+    name:    AdjustMesoService
+  - id:      TOPIC_ADJUST_HEALTH
+    name:    AdjustHealthService
+  - id:      TOPIC_ADJUST_MANA
+    name:    AdjustManaService
