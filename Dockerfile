@@ -11,7 +11,7 @@ RUN mvn dependency:go-offline package -B
 COPY tds-api/src tds-api/src
 COPY tds-base/src tds-base/src
 
-RUN mvn install
+RUN mvn install -Prunnable
 
 FROM openjdk:14-ea-jdk-alpine
 USER root
