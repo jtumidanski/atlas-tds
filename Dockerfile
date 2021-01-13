@@ -12,7 +12,11 @@ RUN apk add --no-cache git
 ADD ./atlas.com/tds /atlas.com/tds
 WORKDIR /atlas.com/tds
 
+RUN apk add make
+
 RUN go build -o /server
+
+RUN make swagger
 
 FROM alpine:3.12
 
@@ -24,7 +28,7 @@ RUN apk add --no-cache libc6-compat
 WORKDIR /
 
 COPY --from=build-env /server /
+COPY --from=build-env /atlas.com/tds/swagger.yaml /
 COPY /atlas.com/tds/config.yaml /
-COPY /atlas.com/tds/swagger.yaml /
 
 CMD ["/server"]
