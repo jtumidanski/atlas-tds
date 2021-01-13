@@ -8,11 +8,10 @@ FROM golang:alpine3.12 AS build-env
 # (You may fetch or manage dependencies here,
 # either manually or with a tool like "godep".)
 RUN apk add --no-cache git
+RUN apk add make
 
 ADD ./atlas.com/tds /atlas.com/tds
 WORKDIR /atlas.com/tds
-
-RUN apk add make
 
 RUN go build -o /server
 
