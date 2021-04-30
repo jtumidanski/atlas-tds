@@ -93,3 +93,9 @@ topics:
     name:    AdjustHealthService
   - id:      TOPIC_ADJUST_MANA
     name:    AdjustManaService
+  - id:      TOPIC_EQUIP_ITEM
+    name:    EquipItemService
+  - id:      TOPIC_UNEQUIP_ITEM
+    name:    UnequipItemService
+  - id:      TOPIC_CHARACTER_EQUIP_CHANGED
+    name:    CharacterEquipChangedService
