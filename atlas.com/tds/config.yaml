@@ -99,3 +99,7 @@ topics:
     name:    UnequipItemService
   - id:      TOPIC_CHARACTER_EQUIP_CHANGED
     name:    CharacterEquipChangedService
+  - id:      TOPIC_APPLY_SKILL_COMMAND
+    name:    ApplySkillCommandService
+  - id:      TOPIC_APPLY_MONSTER_MAGNET_COMMAND
+    name:    ApplyMonsterMagnetCommandService
