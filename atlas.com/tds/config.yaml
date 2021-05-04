@@ -103,3 +103,7 @@ topics:
     name:    ApplySkillCommandService
   - id:      TOPIC_APPLY_MONSTER_MAGNET_COMMAND
     name:    ApplyMonsterMagnetCommandService
+  - id:      TOPIC_CHARACTER_BUFF
+    name:    CharacterBuffService
+  - id:      TOPIC_CHARACTER_CANCEL_BUFF
+    name:    CharacterCancelBuffService
