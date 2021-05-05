@@ -107,3 +107,5 @@ topics:
     name:    CharacterBuffService
   - id:      TOPIC_CHARACTER_CANCEL_BUFF
     name:    CharacterCancelBuffService
+  - id:      TOPIC_SPAWN_DROP_COMMAND
+    name:    SpawnDropCommandService
