@@ -109,3 +109,11 @@ topics:
     name:    CharacterCancelBuffService
   - id:      TOPIC_SPAWN_DROP_COMMAND
     name:    SpawnDropCommandService
+  - id:      TOPIC_CHARACTER_GAIN_EQUIPMENT
+    name:    CharacterGainEquipmentService
+  - id:      TOPIC_CHARACTER_GAIN_ITEM
+    name:    CharacterGainItemService
+  - id:      TOPIC_CHARACTER_ADJUST_JOB
+    name:    CharacterAdjustJobService
+  - id:      TOPIC_CHARACTER_RESET_AP
+    name:    CharacterResetAPService
