@@ -117,3 +117,7 @@ topics:
     name:    CharacterAdjustJobService
   - id:      TOPIC_CHARACTER_RESET_AP
     name:    CharacterResetAPService
+  - id:      TOPIC_CHARACTER_DROP_ITEM
+    name:    CharacterDropItemService
+  - id:      TOPIC_SPAWN_CHARACTER_DROP_COMMAND
+    name:    SpawnCharacterDropCommandService
