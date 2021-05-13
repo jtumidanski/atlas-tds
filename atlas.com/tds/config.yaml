@@ -121,3 +121,5 @@ topics:
     name:    CharacterDropItemService
   - id:      TOPIC_SPAWN_CHARACTER_DROP_COMMAND
     name:    SpawnCharacterDropCommandService
+  - id:      TOPIC_CHANGE_KEY_MAP
+    name:    ChangeKeyMapService
