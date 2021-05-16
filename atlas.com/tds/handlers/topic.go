@@ -15,8 +15,8 @@
 package handlers
 
 import (
-	"atlas-wrg/attributes"
-	"atlas-wrg/configurations"
+	"atlas-tds/attributes"
+	"atlas-tds/configurations"
 	"log"
 	"net/http"
 )

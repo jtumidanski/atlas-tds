@@ -91,6 +91,36 @@ topics:
     name:    AdjustHealthService
   - id:      TOPIC_ADJUST_MANA
     name:    AdjustManaService
+  - id:      TOPIC_EQUIP_ITEM
+    name:    EquipItemService
+  - id:      TOPIC_UNEQUIP_ITEM
+    name:    UnequipItemService
+  - id:      TOPIC_CHARACTER_EQUIP_CHANGED
+    name:    CharacterEquipChangedService
+  - id:      TOPIC_APPLY_SKILL_COMMAND
+    name:    ApplySkillCommandService
+  - id:      TOPIC_APPLY_MONSTER_MAGNET_COMMAND
+    name:    ApplyMonsterMagnetCommandService
+  - id:      TOPIC_CHARACTER_BUFF
+    name:    CharacterBuffService
+  - id:      TOPIC_CHARACTER_CANCEL_BUFF
+    name:    CharacterCancelBuffService
+  - id:      TOPIC_SPAWN_DROP_COMMAND
+    name:    SpawnDropCommandService
+  - id:      TOPIC_CHARACTER_GAIN_EQUIPMENT
+    name:    CharacterGainEquipmentService
+  - id:      TOPIC_CHARACTER_GAIN_ITEM
+    name:    CharacterGainItemService
+  - id:      TOPIC_CHARACTER_ADJUST_JOB
+    name:    CharacterAdjustJobService
+  - id:      TOPIC_CHARACTER_RESET_AP
+    name:    CharacterResetAPService
+  - id:      TOPIC_CHARACTER_DROP_ITEM
+    name:    CharacterDropItemService
+  - id:      TOPIC_SPAWN_CHARACTER_DROP_COMMAND
+    name:    SpawnCharacterDropCommandService
+  - id:      TOPIC_CHANGE_KEY_MAP
+    name:    ChangeKeyMapService
   - id:      TOPIC_CHARACTER_ATTACK_COMMAND
     name:    CharacterAttackCommandService
   - id:      TOPIC_CLOSE_RANGE_ATTACK_EVENT

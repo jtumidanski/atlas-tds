@@ -1,7 +1,7 @@
 package main
 
 import (
-	"atlas-wrg/handlers"
+	"atlas-tds/handlers"
 	"github.com/go-openapi/runtime/middleware"
 	"github.com/gorilla/mux"
 	"log"
