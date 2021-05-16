@@ -9,8 +9,6 @@ topics:
     name:    ChangeMapEventService
   - id:      TOPIC_CHARACTER_CREATED_EVENT
     name:    CharacterCreatedEventService
-  - id:      TOPIC_CHARACTER_STATUS
-    name:    CharacterStatusEventService
   - id:      TOPIC_CHARACTER_MOVEMENT
     name:    CharacterMovementEventService
   - id:      TOPIC_CHARACTER_EXPERIENCE_EVENT
@@ -93,3 +91,7 @@ topics:
     name:    AdjustHealthService
   - id:      TOPIC_ADJUST_MANA
     name:    AdjustManaService
+  - id:      TOPIC_CHARACTER_ATTACK_COMMAND
+    name:    CharacterAttackCommandService
+  - id:      TOPIC_CLOSE_RANGE_ATTACK_EVENT
+    name:    CloseRangeAttackEvent
