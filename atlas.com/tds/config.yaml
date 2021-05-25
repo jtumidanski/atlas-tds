@@ -135,3 +135,7 @@ topics:
     name: MoveItemService
   - id:   TOPIC_CHARACTER_MP_EATER_EVENT
     name: CharacterMPEaterService
+  - id:   TOPIC_NPC_TALK_NUM_COMMAND
+    name: NPCTalkNumCommandService
+  - id:   TOPIC_NPC_TALK_STYLE_COMMAND
+    name: NPCTalkStyleCommandService
