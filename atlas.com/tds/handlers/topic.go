@@ -17,16 +17,16 @@ package handlers
 import (
 	"atlas-tds/attributes"
 	"atlas-tds/configurations"
-	"log"
+	"github.com/sirupsen/logrus"
 	"net/http"
 )
 
 // Topics handler for getting topic information
 type Topic struct {
-	l *log.Logger
+	l logrus.FieldLogger
 }
 
-func NewTopic(l *log.Logger) *Topic {
+func NewTopic(l logrus.FieldLogger) *Topic {
 	return &Topic{l}
 }
 

@@ -1,37 +1,32 @@
 package main
 
 import (
-	"atlas-tds/handlers"
-	"github.com/go-openapi/runtime/middleware"
-	"github.com/gorilla/mux"
-	"log"
-	"net/http"
+	"atlas-tds/logger"
+	"atlas-tds/rest"
+	"context"
 	"os"
+	"os/signal"
+	"sync"
+	"syscall"
 )
 
 func main() {
-	handleRequests()
-}
+	l := logger.CreateLogger()
+	l.Infoln("Starting main service.")
 
-func handleRequests() {
-	l := log.New(os.Stdout, "tds ", log.LstdFlags)
+	wg := &sync.WaitGroup{}
+	ctx, cancel := context.WithCancel(context.Background())
 
-	router := mux.NewRouter().StrictSlash(true).PathPrefix("/ms/tds").Subrouter()
-	router.Use(commonHeader)
-	router.Handle("/docs", middleware.Redoc(middleware.RedocOpts{BasePath: "/ms/tds", SpecURL: "/ms/tds/swagger.yaml"}, nil))
-	router.Handle("/swagger.yaml", http.StripPrefix("/ms/tds", http.FileServer(http.Dir("/"))))
+	rest.CreateRestService(l, ctx, wg)
 
-	t := handlers.NewTopic(l)
-	csRouter := router.PathPrefix("/topics").Subrouter()
-	csRouter.HandleFunc("/", t.GetTopics).Methods("GET")
-	csRouter.HandleFunc("/{topicId}", t.GetTopic).Methods("GET")
+	// trap sigterm or interrupt and gracefully shutdown the server
+	c := make(chan os.Signal, 1)
+	signal.Notify(c, os.Interrupt, os.Kill, syscall.SIGTERM)
 
-	log.Fatal(http.ListenAndServe(":8080", router))
-}
-
-func commonHeader(next http.Handler) http.Handler {
-	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
-		w.Header().Add("Content-Type", "application/json")
-		next.ServeHTTP(w, r)
-	})
+	// Block until a signal is received.
+	sig := <-c
+	l.Infof("Initiating shutdown with signal %s.", sig)
+	cancel()
+	wg.Wait()
+	l.Infoln("Service shutdown.")
 }
