@@ -15,8 +15,6 @@ WORKDIR /atlas.com/tds
 
 RUN go build -o /server
 
-RUN make swagger
-
 FROM alpine:3.12
 
 # Port 8080 belongs to our application
