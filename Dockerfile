@@ -27,7 +27,6 @@ RUN apk add --no-cache libc6-compat
 WORKDIR /
 
 COPY --from=build-env /server /
-COPY --from=build-env /atlas.com/tds/swagger.yaml /
 COPY /atlas.com/tds/config.yaml /
 
 CMD ["/server"]
