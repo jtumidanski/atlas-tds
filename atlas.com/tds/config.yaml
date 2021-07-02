@@ -139,3 +139,7 @@ topics:
     name: NPCTalkNumCommandService
   - id:   TOPIC_NPC_TALK_STYLE_COMMAND
     name: NPCTalkStyleCommandService
+  - id:   TOPIC_CREATE_REACTOR_COMMAND
+    name: CreateReactorCommandService
+  - id:   TOPIC_REACTOR_STATUS_EVENT
+    name: ReactorStatusEventService
