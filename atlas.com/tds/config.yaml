@@ -1,145 +1,151 @@
 topics:
-  - id:   TOPIC_CHANNEL_SERVICE
-    name: ChannelService
-  - id:   TOPIC_CHARACTER_STATUS
-    name: CharacterStatusEventService
-  - id:   TOPIC_CHANGE_MAP_COMMAND
-    name: ChangeMapCommandService
-  - id:   TOPIC_CHANGE_MAP_EVENT
-    name: ChangeMapEventService
-  - id:   TOPIC_CHARACTER_CREATED_EVENT
-    name: CharacterCreatedEventService
-  - id:   TOPIC_CHARACTER_MOVEMENT
-    name: CharacterMovementEventService
-  - id:   TOPIC_CHARACTER_EXPERIENCE_EVENT
-    name: CharacterExperienceService
-  - id:   TOPIC_CHARACTER_LEVEL_EVENT
-    name: CharacterLevelService
-  - id:   TOPIC_ENTER_PORTAL
-    name: EnterPortalService
-  - id:   TOPIC_ENABLE_ACTIONS
-    name: EnableActionsService
-  - id:   TOPIC_MAP_CHARACTER_EVENT
-    name: MapCharacterEventService
-  - id:   TOPIC_CHARACTER_CHANGE_CHANNEL_EVENT
-    name: CharacterChangeChannelEventService
-  - id:   TOPIC_MONSTER_EVENT
-    name: MonsterService
-  - id:   TOPIC_MONSTER_MOVEMENT
-    name: MonsterMovementService
-  - id:   TOPIC_CONTROL_MONSTER_EVENT
-    name: ControlMonsterService
-  - id:   TOPIC_MONSTER_DAMAGE
-    name: MonsterDamageService
-  - id:   TOPIC_MONSTER_KILLED_EVENT
-    name: MonsterKilledService
-  - id:   TOPIC_DROP_EVENT
-    name: DropService
-  - id:   TOPIC_CHARACTER_MAP_MESSAGE_EVENT
-    name: CharacterMapMessageEventService
-  - id:   TOPIC_DROP_EXPIRE_EVENT
-    name: DropExpiredService
-  - id:   TOPIC_CHARACTER_STAT_EVENT
-    name: CharacterStatService
-  - id:   TOPIC_ASSIGN_AP_COMMAND
-    name: AssignApService
-  - id:   TOPIC_RESERVE_DROP_COMMAND
-    name: ReserveDropCommandService
-  - id:   TOPIC_PICKUP_DROP_COMMAND
-    name: PickupDropCommandService
-  - id:   TOPIC_DROP_RESERVATION_EVENT
-    name: DropReservationService
-  - id:   TOPIC_PICKUP_DROP_EVENT
-    name: PickupDropService
-  - id:   TOPIC_PICKED_UP_ITEM
-    name: PickedUpItemService
-  - id:   TOPIC_PICKED_UP_NX
-    name: PickedUpNxService
-  - id:   TOPIC_GAIN_MESO
-    name: GainMesoService
-  - id:   TOPIC_MESO_GAINED
-    name: MesoGainedService
-  - id:   TOPIC_CANCEL_DROP_RESERVATION_COMMAND
-    name: CancelDropReservationCommandService
-  - id:   TOPIC_INVENTORY_MODIFICATION
-    name: InventoryModificationService
-  - id:   TOPIC_SERVER_NOTICE_COMMAND
-    name: ServerNoticeCommandService
-  - id:   TOPIC_NPC_TALK_COMMAND
-    name: NpcTalkService
-  - id:   TOPIC_START_NPC_CONVERSATION
-    name: StartNpcConversationService
-  - id:   TOPIC_CONTINUE_NPC_CONVERSATION
-    name: ContinueNpcConversationService
-  - id:   TOPIC_SET_RETURN_TEXT
-    name: SetReturnTextService
-  - id:   TOPIC_CHARACTER_SKILL_UPDATE_EVENT
-    name: CharacterSkillUpdateService
-  - id:   TOPIC_ASSIGN_SP_COMMAND
-    name: AssignSpService
-  - id:   CHANGE_FACIAL_EXPRESSION
-    name: ChangeFacialExpressionService
-  - id:   EXPRESSION_CHANGED
-    name: ExpressionChangedService
-  - id:   DAMAGE_CHARACTER
-    name: DamageCharacterService
-  - id:   TOPIC_SHOW_DAMAGE_CHARACTER_COMMAND
-    name: ShowDamageCharacterService
-  - id:   TOPIC_ADJUST_MESO
-    name: AdjustMesoService
-  - id:   TOPIC_ADJUST_HEALTH
-    name: AdjustHealthService
-  - id:   TOPIC_ADJUST_MANA
-    name: AdjustManaService
-  - id:   TOPIC_EQUIP_ITEM
-    name: EquipItemService
-  - id:   TOPIC_UNEQUIP_ITEM
-    name: UnequipItemService
-  - id:   TOPIC_CHARACTER_EQUIP_CHANGED
-    name: CharacterEquipChangedService
-  - id:   TOPIC_APPLY_SKILL_COMMAND
-    name: ApplySkillCommandService
-  - id:   TOPIC_APPLY_MONSTER_MAGNET_COMMAND
-    name: ApplyMonsterMagnetCommandService
-  - id:   TOPIC_CHARACTER_BUFF
-    name: CharacterBuffService
-  - id:   TOPIC_CHARACTER_CANCEL_BUFF
-    name: CharacterCancelBuffService
-  - id:   TOPIC_SPAWN_DROP_COMMAND
-    name: SpawnDropCommandService
-  - id:   TOPIC_CHARACTER_GAIN_EQUIPMENT
-    name: CharacterGainEquipmentService
-  - id:   TOPIC_CHARACTER_GAIN_ITEM
-    name: CharacterGainItemService
-  - id:   TOPIC_CHARACTER_ADJUST_JOB
-    name: CharacterAdjustJobService
-  - id:   TOPIC_CHARACTER_RESET_AP
-    name: CharacterResetAPService
-  - id:   TOPIC_CHARACTER_DROP_ITEM
-    name: CharacterDropItemService
-  - id:   TOPIC_SPAWN_CHARACTER_DROP_COMMAND
-    name: SpawnCharacterDropCommandService
-  - id:   TOPIC_CHANGE_KEY_MAP
-    name: ChangeKeyMapService
-  - id:   TOPIC_CHARACTER_ATTACK_COMMAND
-    name: CharacterAttackCommandService
-  - id:   TOPIC_CLOSE_RANGE_ATTACK_EVENT
-    name: CloseRangeAttackEvent
-  - id:   TOPIC_RANGE_ATTACK_EVENT
-    name: RangeAttackEvent
-  - id:   TOPIC_MAGIC_ATTACK_EVENT
-    name: MagicAttackEvent
-  - id:   TOPIC_INVENTORY_FULL
-    name: InventoryFullService
-  - id:   TOPIC_MOVE_ITEM
-    name: MoveItemService
-  - id:   TOPIC_CHARACTER_MP_EATER_EVENT
-    name: CharacterMPEaterService
-  - id:   TOPIC_NPC_TALK_NUM_COMMAND
-    name: NPCTalkNumCommandService
-  - id:   TOPIC_NPC_TALK_STYLE_COMMAND
-    name: NPCTalkStyleCommandService
-  - id:   TOPIC_CREATE_REACTOR_COMMAND
-    name: CreateReactorCommandService
-  - id:   TOPIC_REACTOR_STATUS_EVENT
-    name: ReactorStatusEventService
+  - id:    TOPIC_CHANNEL_SERVICE
+    name:  ChannelService
+  - id:    TOPIC_CHARACTER_STATUS
+    name:  CharacterStatusEventService
+  - id:    TOPIC_CHANGE_MAP_COMMAND
+    name:  ChangeMapCommandService
+  - id:    TOPIC_CHANGE_MAP_EVENT
+    name:  ChangeMapEventService
+  - id:    TOPIC_CHARACTER_CREATED_EVENT
+    name:  CharacterCreatedEventService
+  - id:    TOPIC_CHARACTER_MOVEMENT
+    name:  CharacterMovementEventService
+  - id:    TOPIC_CHARACTER_EXPERIENCE_EVENT
+    name:  CharacterExperienceService
+  - id:    TOPIC_CHARACTER_LEVEL_EVENT
+    name:  CharacterLevelService
+  - id:    TOPIC_ENTER_PORTAL
+    name:  EnterPortalService
+  - id:    TOPIC_ENABLE_ACTIONS
+    name:  EnableActionsService
+  - id:    TOPIC_MAP_CHARACTER_EVENT
+    name:  MapCharacterEventService
+  - id:    TOPIC_CHARACTER_CHANGE_CHANNEL_EVENT
+    name:  CharacterChangeChannelEventService
+  - id:    TOPIC_MONSTER_EVENT
+    name:  MonsterService
+  - id:    TOPIC_MONSTER_MOVEMENT
+    name:  MonsterMovementService
+  - id:    TOPIC_CONTROL_MONSTER_EVENT
+    name:  ControlMonsterService
+  - id:    TOPIC_MONSTER_DAMAGE
+    name:  MonsterDamageService
+  - id:    TOPIC_MONSTER_KILLED_EVENT
+    name:  MonsterKilledService
+  - id:    TOPIC_DROP_EVENT
+    name:  DropService
+  - id:    TOPIC_CHARACTER_MAP_MESSAGE_EVENT
+    name:  CharacterMapMessageEventService
+  - id:    TOPIC_DROP_EXPIRE_EVENT
+    name:  DropExpiredService
+  - id:    TOPIC_CHARACTER_STAT_EVENT
+    name:  CharacterStatService
+  - id:    TOPIC_ASSIGN_AP_COMMAND
+    name:  AssignApService
+  - id:    TOPIC_RESERVE_DROP_COMMAND
+    name:  ReserveDropCommandService
+  - id:    TOPIC_PICKUP_DROP_COMMAND
+    name:  PickupDropCommandService
+  - id:    TOPIC_DROP_RESERVATION_EVENT
+    name:  DropReservationService
+  - id:    TOPIC_PICKUP_DROP_EVENT
+    name:  PickupDropService
+  - id:    TOPIC_PICKED_UP_ITEM
+    name:  PickedUpItemService
+  - id:    TOPIC_PICKED_UP_NX
+    name:  PickedUpNxService
+  - id:    TOPIC_GAIN_MESO
+    name:  GainMesoService
+  - id:    TOPIC_MESO_GAINED
+    name:  MesoGainedService
+  - id:    TOPIC_CANCEL_DROP_RESERVATION_COMMAND
+    name:  CancelDropReservationCommandService
+  - id:    TOPIC_INVENTORY_MODIFICATION
+    name:  InventoryModificationService
+  - id:    TOPIC_SERVER_NOTICE_COMMAND
+    name:  ServerNoticeCommandService
+  - id:    TOPIC_NPC_TALK_COMMAND
+    name:  NpcTalkService
+  - id:    TOPIC_START_NPC_CONVERSATION
+    name:  StartNpcConversationService
+  - id:    TOPIC_CONTINUE_NPC_CONVERSATION
+    name:  ContinueNpcConversationService
+  - id:    TOPIC_SET_RETURN_TEXT
+    name:  SetReturnTextService
+  - id:    TOPIC_CHARACTER_SKILL_UPDATE_EVENT
+    name:  CharacterSkillUpdateService
+  - id:    TOPIC_ASSIGN_SP_COMMAND
+    name:  AssignSpService
+  - id:    CHANGE_FACIAL_EXPRESSION
+    name:  ChangeFacialExpressionService
+  - id:    EXPRESSION_CHANGED
+    name:  ExpressionChangedService
+  - id:    DAMAGE_CHARACTER
+    name:  DamageCharacterService
+  - id:    TOPIC_SHOW_DAMAGE_CHARACTER_COMMAND
+    name:  ShowDamageCharacterService
+  - id:    TOPIC_ADJUST_MESO
+    name:  AdjustMesoService
+  - id:    TOPIC_ADJUST_HEALTH
+    name:  AdjustHealthService
+  - id:    TOPIC_ADJUST_MANA
+    name:  AdjustManaService
+  - id:    TOPIC_EQUIP_ITEM
+    name:  EquipItemService
+  - id:    TOPIC_UNEQUIP_ITEM
+    name:  UnequipItemService
+  - id:    TOPIC_CHARACTER_EQUIP_CHANGED
+    name:  CharacterEquipChangedService
+  - id:    TOPIC_APPLY_SKILL_COMMAND
+    name:  ApplySkillCommandService
+  - id:    TOPIC_APPLY_MONSTER_MAGNET_COMMAND
+    name:  ApplyMonsterMagnetCommandService
+  - id:    TOPIC_CHARACTER_BUFF
+    name:  CharacterBuffService
+  - id:    TOPIC_CHARACTER_CANCEL_BUFF
+    name:  CharacterCancelBuffService
+  - id:    TOPIC_SPAWN_DROP_COMMAND
+    name:  SpawnDropCommandService
+  - id:    TOPIC_CHARACTER_GAIN_EQUIPMENT
+    name:  CharacterGainEquipmentService
+  - id:    TOPIC_CHARACTER_GAIN_ITEM
+    name:  CharacterGainItemService
+  - id:    TOPIC_CHARACTER_ADJUST_JOB
+    name:  CharacterAdjustJobService
+  - id:    TOPIC_CHARACTER_RESET_AP
+    name:  CharacterResetAPService
+  - id:    TOPIC_CHARACTER_DROP_ITEM
+    name:  CharacterDropItemService
+  - id:    TOPIC_SPAWN_CHARACTER_DROP_COMMAND
+    name:  SpawnCharacterDropCommandService
+  - id:    TOPIC_CHANGE_KEY_MAP
+    name:  ChangeKeyMapService
+  - id:    TOPIC_CHARACTER_ATTACK_COMMAND
+    name:  CharacterAttackCommandService
+  - id:    TOPIC_CLOSE_RANGE_ATTACK_EVENT
+    name:  CloseRangeAttackEvent
+  - id:    TOPIC_RANGE_ATTACK_EVENT
+    name:  RangeAttackEvent
+  - id:    TOPIC_MAGIC_ATTACK_EVENT
+    name:  MagicAttackEvent
+  - id:    TOPIC_INVENTORY_FULL
+    name:  InventoryFullService
+  - id:    TOPIC_MOVE_ITEM
+    name:  MoveItemService
+  - id:    TOPIC_CHARACTER_MP_EATER_EVENT
+    name:  CharacterMPEaterService
+  - id:    TOPIC_NPC_TALK_NUM_COMMAND
+    name:  NPCTalkNumCommandService
+  - id:    TOPIC_NPC_TALK_STYLE_COMMAND
+    name:  NPCTalkStyleCommandService
+  - id:    TOPIC_CREATE_REACTOR_COMMAND
+    name:  CreateReactorCommandService
+  - id:    TOPIC_REACTOR_STATUS_EVENT
+    name:  ReactorStatusEventService
+  - id:    TOPIC_HIT_REACTOR_COMMAND
+    name:  HitReactorCommandService
+  - id:    TOPIC_TOUCH_REACTOR_COMMAND
+    name:  TouchReactorCommandService
+  - id:    TOPIC_RELEASE_REACTOR_COMMAND
+    name:  ReleaseReactorCommandService
