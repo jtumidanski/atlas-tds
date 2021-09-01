@@ -149,3 +149,17 @@ topics:
     name:  TouchReactorCommandService
   - id:    TOPIC_RELEASE_REACTOR_COMMAND
     name:  ReleaseReactorCommandService
+  - id:    TOPIC_PARTY_CREATE
+    name:  PartyCreateCommandService
+  - id:    TOPIC_PARTY_EXPEL
+    name:  PartyExpelCommandService
+  - id:    TOPIC_PARTY_JOIN
+    name:  PartyJoinCommandService
+  - id:    TOPIC_PARTY_LEAVE
+    name:  PartyLeaveCommandService
+  - id:    TOPIC_PARTY_PROMOTE_LEADER
+    name:  PartyPromoteLeaderCommandService
+  - id:    TOPIC_PARTY_STATUS
+    name:  PartyStatusEventService
+  - id:    TOPIC_PARTY_MEMBER_STATUS
+    name:  PartyMemberStatusEventService
