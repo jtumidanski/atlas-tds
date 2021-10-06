@@ -1,29 +1,28 @@
 package rest
 
 import (
-	"atlas-tds/handlers"
 	"context"
-	"github.com/go-openapi/runtime/middleware"
 	"github.com/gorilla/mux"
 	"github.com/sirupsen/logrus"
 	"net/http"
 	"sync"
 )
 
-func CreateRestService(l *logrus.Logger, ctx context.Context, wg *sync.WaitGroup) {
-	go NewServer(l, ctx, wg, ProduceRoutes)
+type RouteInitializer func(*mux.Router, logrus.FieldLogger)
+
+func CreateService(l *logrus.Logger, ctx context.Context, wg *sync.WaitGroup, basePath string, initializers ...RouteInitializer) {
+	go NewServer(l, ctx, wg, ProduceRoutes(basePath, initializers...))
 }
 
-func ProduceRoutes(l logrus.FieldLogger) http.Handler {
-	router := mux.NewRouter().StrictSlash(true).PathPrefix("/ms/tds").Subrouter()
-	router.Use(CommonHeader)
-	router.Handle("/docs", middleware.Redoc(middleware.RedocOpts{BasePath: "/ms/tds", SpecURL: "/ms/tds/swagger.yaml"}, nil))
-	router.Handle("/swagger.yaml", http.StripPrefix("/ms/tds", http.FileServer(http.Dir("/"))))
+func ProduceRoutes(basePath string, initializers ...RouteInitializer) func(l logrus.FieldLogger) http.Handler {
+	return func(l logrus.FieldLogger) http.Handler {
+		router := mux.NewRouter().PathPrefix(basePath).Subrouter().StrictSlash(true)
+		router.Use(CommonHeader)
 
-	t := handlers.NewTopic(l)
-	csRouter := router.PathPrefix("/topics").Subrouter()
-	csRouter.HandleFunc("/", t.GetTopics).Methods("GET")
-	csRouter.HandleFunc("/{topicId}", t.GetTopic).Methods("GET")
+		for _, initializer := range initializers {
+			initializer(router, l)
+		}
 
-	return router
+		return router
+	}
 }
