@@ -163,3 +163,21 @@ topics:
     name:  PartyStatusEventService
   - id:    TOPIC_PARTY_MEMBER_STATUS
     name:  PartyMemberStatusEventService
+  - id:    TOPIC_TRANSPORT_STATUS_EVENT
+    name:  TransportStatusEventService
+  - id:    TOPIC_ENTER_CASH_SHOP_COMMAND
+    name:  EnterCashShopCommandService
+  - id:    TOPIC_ENTER_CASH_SHOP_EVENT
+    name:  EnterCashShopEventService
+  - id:    TOPIC_AWARD_CREDIT_COMMAND
+    name:  AwardCreditCommandService
+  - id:    TOPIC_AWARD_POINTS_COMMAND
+    name:  AwardPointsCommandService
+  - id:    TOPIC_AWARD_PREPAID_COMMAND
+    name:  AwardPrepaidCommandService
+  - id:    TOPIC_MODIFY_WISHLIST_COMMAND
+    name:  ModifyWishlistCommandService
+  - id:    TOPIC_WISHLIST_STATUS_EVENT
+    name:  WishlistStatusEventService
+  - id:    TOPIC_PURCHASE_CASH_SHOP_ITEM_COMMAND
+    name:  PurchaseCashShopItemCommandService
