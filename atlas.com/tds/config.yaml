@@ -181,3 +181,11 @@ topics:
     name:  WishlistStatusEventService
   - id:    TOPIC_PURCHASE_CASH_SHOP_ITEM_COMMAND
     name:  PurchaseCashShopItemCommandService
+  - id:    TOPIC_CASH_SHOP_GATEKEEPER_COMMAND
+    name:  CashShopGatekeeperCommandService
+  - id:    TOPIC_CASH_SHOP_ENTRY_POLL
+    name:  CashShopEntryPollService
+  - id:    TOPIC_CASH_SHOP_ENTRY_POLL_RESPONSE
+    name:  CashShopEntryPollResponseService
+  - id:    TOPIC_CASH_SHOP_ENTRY_REJECTION_EVENT
+    name:  CashShopEntryRejectionEventService
